@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-anneal-sa"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/simulated-annealing"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - simulated-annealing
+  - ising
+  - qubo
+  - combinatorial-optimization
+  - quantum-inspired
+  - heuristic
+  - numba
+abstract: "Simulated Annealing heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."

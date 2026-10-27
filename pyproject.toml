@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-anneal-sa"
+version = "0.1.0"
+description = "Simulated Annealing heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["simulated-annealing", "ising", "qubo", "combinatorial-optimization", "quantum-inspired", "heuristic", "numba"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["numpy", "numpy", "scipy", "dimod"]
+
+[project.optional-dependencies]
+test = ["pytest", "numpy", "scipy", "dimod"]
+
+[project.scripts]
+pqblocks-anneal-sa = "pqblocks_anneal_sa.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/simulated-annealing"
+Documentation = "https://github.com/PQBlocks/simulated-annealing#readme"
+Source = "https://github.com/PQBlocks/simulated-annealing"
+Changelog = "https://github.com/PQBlocks/simulated-annealing/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/simulated-annealing/issues"
+Security = "https://github.com/PQBlocks/simulated-annealing/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
